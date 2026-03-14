@@ -1,0 +1,11 @@
+services:
+  pygeoapi:
+    build: .
+    ports:
+      - "5000:80"
+    volumes:
+      - ../config.yml:/pygeoapi/local.config.yml
+      - ../processes:/pygeoapi/processes
+      - ../data:/pygeoapi/data
+    environment:
+      PYGEOAPI_CONFIG: /pygeoapi/local.config.yml
