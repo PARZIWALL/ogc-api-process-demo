@@ -1,0 +1,43 @@
+server:
+  bind:
+    host: 0.0.0.0
+    port: 80
+  url: http://localhost:5000
+  language: en-US
+  languages:
+    - en
+
+logging:
+  level: INFO
+
+metadata:
+  identification:
+    title: OGC API demo - pygeoapi
+    description: Demo instance publishing OGC APIs and Processes
+    keywords:
+      - ogc
+      - pygeoapi
+      - processes
+    keywords_type: theme
+    terms_of_service: https://example.org/terms
+    url: http://example.org
+  license:
+    name: Apache-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  provider:
+    name: Demo Organization
+    url: https://example.org
+  contact:
+    name: Developer
+    email: dev@example.org
+  languages:
+    - en
+
+resources:
+
+  buffer-analysis:
+    type: process
+    processor:
+      name: processes.park_buffer.ParkBuffer
+    title: Park Buffer Analysis
+    description: Perform buffer analysis on parks GeoJSON

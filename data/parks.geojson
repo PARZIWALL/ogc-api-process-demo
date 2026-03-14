@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "park-001",
+      "properties": {
+        "name": "Central Park",
+        "area_sqm": 843000,
+        "established": 1858
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-74.02, 40.71],
+          [-73.98, 40.71],
+          [-73.98, 40.79],
+          [-74.02, 40.79],
+          [-74.02, 40.71]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "park-002",
+      "properties": {
+        "name": "Bryant Park",
+        "area_sqm": 15000,
+        "established": 1911
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.985, 40.753],
+          [-73.982, 40.753],
+          [-73.982, 40.755],
+          [-73.985, 40.755],
+          [-73.985, 40.753]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "park-003",
+      "properties": {
+        "name": "Washington Square Park",
+        "area_sqm": 87000,
+        "established": 1827
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.998, 40.730],
+          [-73.993, 40.730],
+          [-73.993, 40.735],
+          [-73.998, 40.735],
+          [-73.998, 40.730]
+        ]]
+      }
+    }
+  ]
+}
