@@ -1,0 +1,10 @@
+﻿Sending POST request to http://localhost:5000/processes/buffer-analysis/execution
+Payload: {
+  "inputs": {
+    "distance": 500,
+    "stac_item_url": "https://raw.githubusercontent.com/radiantearth/stac-spec/master/examples/core-item.json"
+  }
+}
+HTTP Status: 200
+Resulting Geometry Type: Polygon
+Job Executed successfully!

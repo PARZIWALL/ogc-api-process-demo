@@ -6,6 +6,10 @@ server:
   language: en-US
   languages:
     - en
+  manager:
+    name: TinyDB
+    connection: /tmp/pygeoapi-process-manager.db
+    output_dir: /tmp
 
 logging:
   level: INFO
@@ -39,5 +43,5 @@ resources:
     type: process
     processor:
       name: processes.park_buffer.ParkBuffer
-    title: Park Buffer Analysis
-    description: Perform buffer analysis on parks GeoJSON
+    title: STAC Item Buffer Analysis
+    description: Perform spatial buffer analysis natively on a remote STAC Item JSON payload
