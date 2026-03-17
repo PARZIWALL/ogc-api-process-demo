@@ -52,8 +52,3 @@ curl -X POST "http://localhost:5000/processes/buffer-analysis/execution" \
 ```
 
 You will receive an HTTP 200/201 response with the successfully buffered `Polygon` geometry dynamically extracted and processed from the remote catalog item!
-
-## 💡 Future GSoC Ideas Propsoal
-As part of extending this logic for the Google Summer of Code, potential integration ideas include:
-1.  **Webhook Callbacks via Celery**: Completely abstracting client-side polling away using serverless HTTP event callbacks.
-2.  **Cloud-Optimized Parquet Generation**: Modifying the output standard from raw embedded JSON dictionaries to pre-signed S3 links containing highly-optimized GeoParquet layers, drastically avoiding API serialization crashes for multi-gigabyte outputs.
